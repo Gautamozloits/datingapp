@@ -1,0 +1,16 @@
+// Here you can add other styles
+.noLink, .noLink:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.pointer{
+	cursor: pointer;
+	color: #20a8d8
+}
+form.theme-form > .row {
+    margin-top: 15px;
+    }
+    span.react-daterange-picker__range-divider {
+        margin-top: 5px;
+        margin-right:8px;
+    }
