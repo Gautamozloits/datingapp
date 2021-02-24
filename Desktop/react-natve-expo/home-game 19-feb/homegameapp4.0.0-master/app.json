@@ -1,0 +1,96 @@
+{
+  "expo": {
+    "name": "The Home Game Dev",
+    "slug": "the-home-game-dev",
+    "privacy": "public",
+    "sdkVersion": "39.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.zodiactech.HomeGameDev",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSCameraUsageDescription": "The Home Game Dev would like to use your camera to update profile image",
+        "NSPhotoLibraryAddUsageDescription": "The Home Game Dev would like to save photos to your photo gallery",
+        "NSPhotoLibraryUsageDescription": "The Home Game Dev would like access to your photo gallery",
+        "NSContactsUsageDescription": "The Home Game Dev would like access to your contact list to invite friends & create room."
+      }
+    },
+    "android": {
+      "package": "com.zodiactech.HomeGameDev",
+
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "myapp"                                      
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+
+      "versionCode": 10,
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_INTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "READ_CONTACTS"
+      ]
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyB0_AzX6-ig7kw_bWC7lSEBTwgf3K94BHM",
+          "authDomain": "home-game-dev.firebaseapp.com",
+          "databaseURL": "https://home-game-dev-default-rtdb.firebaseio.com",
+          "projectId": "home-game-dev",
+          "storageBucket": "home-game-dev.appspot.com",
+          "messagingSenderId": "476457719293",
+          "appId": "1:476457719293:web:12202b9904afd24eaaf594",
+          "measurementId": "G-73VVP02E0L"
+        }
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "home-game",
+            "project": "home-game-dev",
+            "authToken": "9e101c8560b24f298866ef454a1ead5467c95e9b68984549bf4a06fd21a292c6"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "476457719293",
+    "firebase_url": "https://home-game-dev-default-rtdb.firebaseio.com",
+    "project_id": "home-game-dev",
+    "storage_bucket": "home-game-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476457719293:android:de7e5e53959e2af2aaf594",
+        "android_client_info": {
+          "package_name": "com.zodiactech.HomeGameDev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476457719293-t5g2u9jnpab2jc6gqda1smud3t50qrlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGZnCl89CmIO17cOBnt5vy5ds2bHqN4Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476457719293-t5g2u9jnpab2jc6gqda1smud3t50qrlu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "476457719293-4ltcfp9483tf0vfrvthmhej2udbe2036.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dev.thehomegame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

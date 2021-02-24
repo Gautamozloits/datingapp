@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "The Home Game",
+    "slug": "homegame",
+    "privacy": "public",
+    "sdkVersion": "39.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "3.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.zt.homegame",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSCameraUsageDescription": "The Home Game would like to use your camera to update profile image",
+        "NSPhotoLibraryAddUsageDescription": "The Home Game would like to save photos to your photo gallery",
+        "NSPhotoLibraryUsageDescription": "The Home Game would like access to your photo gallery",
+        "NSContactsUsageDescription": "The Home Game would like access to your contact list to invite friends & create room."
+      }
+    },
+    "android": {
+      "package": "com.zt.homegame",
+      "versionCode": 7,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_INTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "READ_CONTACTS"
+      ]
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyD1GBjrvhUQNDeb2QLgAWE-_s_hqnllaxo",
+          "authDomain": "home-game-273112.firebaseapp.com",
+          "databaseURL": "https://home-game-273112.firebaseio.com",
+          "projectId": "home-game-273112",
+          "storageBucket": "home-game-273112.appspot.com",
+          "messagingSenderId": "947645481156",
+          "appId": "1:947645481156:web:036c0758d3cd248406c991",
+          "measurementId": "G-3F6K3LZ51D"
+        }
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "home-game",
+            "project": "home-game-dev",
+            "authToken": "9e101c8560b24f298866ef454a1ead5467c95e9b68984549bf4a06fd21a292c6"
+          }
+        }
+      ]
+    }
+  }
+}
